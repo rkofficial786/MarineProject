@@ -1,0 +1,14 @@
+.background-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    width: 100%;
+    height: 660px;
+}
