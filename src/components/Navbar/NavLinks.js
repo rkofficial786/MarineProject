@@ -17,7 +17,7 @@ const NavLinks = ({
     Products: "products",
     "Spare Parts": "spareParts",
     "Food and Beverages": "foodAndBeverages",
-    "Contact Us": "",
+    "Contact Us": "contact",
   };
 
   if (!isDropDownNeeded) {

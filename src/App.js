@@ -9,6 +9,7 @@ import NavBar from "./components/Navbar/NavBar";
 import ProductPage from "./pages/ProductPage";
 import OverViewPage from "./pages/OverViewPage";
 import ScrollToTop from "./components/ScrollToTop";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/:item" element={<ProductPage />} />
             <Route path="/:item/:id" element={<OverViewPage />} />
+            <Route path="/contact" element={<ContactUs/>}/>
           </Routes>
         </ScrollToTop>
       </Router>
