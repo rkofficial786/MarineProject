@@ -45,3 +45,25 @@ body {
 .locationCard{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+/* animations */
+
+.widthAnimation {
+  animation-name: width;
+  animation-duration: 2s;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes width {
+    0% {
+      opacity: 0;
+      max-width: 0;
+      padding: 0; /* Optionally add padding animation */
+    }
+  
+    100% {
+      opacity: 1;
+      max-width: 100%; /* Adjust as needed */
+      padding: 20px; /* Optionally add padding animation */
+    }
+  }

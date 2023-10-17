@@ -1,0 +1,175 @@
+.fadeRight {
+  animation-name: fadeRight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeLeft {
+  animation-name: fadeLeft;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.opacity {
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeDown {
+  animation: fadeDown 2s ease-out;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+
+  50% {
+    transform: translateY(-25px) scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fadeUp {
+  animation-name: fadeUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+
+  animation-timing-function: ease-in-out; /* Smooth out the animation */
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.6); /* Start slightly below */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Reach the original position */
+  }
+}
+
+.height {
+  animation-name: height;
+  animation-duration: 0.8s; /* Shortened duration for a quicker, smoother animation */
+  animation-fill-mode: forwards; /* Keeps the final style after animation ends */
+}
+
+@keyframes height {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0; /* Optionally add padding animation */
+  }
+
+  100% {
+    opacity: 1;
+    max-height: 500px; /* Adjust as needed */
+    padding: 20px; /* Optionally add padding animation */
+  }
+}
+
+.fadeDown {
+  animation-name: fadeDown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  transform: translateY(30px);
+  animation: bounce 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  70% {
+    transform: translateY(-7.5px);
+  }
+}
+
+.width {
+  animation-name: width;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes height {
+    0% {
+      opacity: 0;
+      max-width: 0;
+      padding: 0; /* Optionally add padding animation */
+    }
+  
+    100% {
+      opacity: 1;
+      max-width: 100%; /* Adjust as needed */
+      padding: 20px; /* Optionally add padding animation */
+    }
+  }

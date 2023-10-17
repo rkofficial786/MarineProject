@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-
+import boatImg from "../images/boat3.png";
 const locationsData = [
   {
     country: "India",
@@ -14,42 +14,78 @@ const locationsData = [
     address: "#08-14 PS100 100 PECK SEAH STREET SINGAPORE (079333)",
     image: require("../media/flags/singapore.2536222e.png"),
   },
-
 ];
 
 const ContactUs = () => {
   return (
-    <div className="">
-      
+    <div className="mt-16">
+      {/* <img src={require("../images/contact.c728fa4c.png")} className="w-screen" alt="" /> */}
 
-      <img src={require("../images/contact.c728fa4c.png")} className="w-screen" alt="" />
+      <div className="flex    flex-col  py-0 justify-around text-center lg:text-left">
+        <div
+          className=" flex flex-col justify-center items-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
+            Contact Us
+          </h1>
+          <div className="text-xl max-w-[80%] lg:max-w-[60%] mx-auto md:mx-0 font-semibold tracking-tight mb-8 text-gray-500">
+            If you have any questions about our products or need assistance with
+            your order, feel free to get in touch with us. Our team is here to
+            help you!
+          </div>
+        </div>
+        {/* 
+        <div className="flex w-auto" data-aos="fade-up" data-aos-delay="700">
+          <img
+            alt="card img"
+            className="rounded-t float-right duration-1000 w-full"
+            src={boatImg}
+          />
+        </div> */}
+      </div>
 
       {/* contacts */}
       <div className="flex mt-[100px] justify-center flex-wrap  gap-20">
-        <div className="flex flex-col gap-3 ">
+        <div
+          data-aos="fade-up-right"
+          data-aos-delay="200"
+          className="flex flex-col gap-3 "
+        >
           <h1 className="text-4xl font-semibold">A.Arjunan</h1>
           <p className="text-base text-gray-500 hover:text-gray-700">
-            PH No : <a href="tel:+6581867004">+6581867004</a> ( WhatsApp/We Chat)
+            PH No : <a href="tel:+6581867004">+6581867004</a> ( WhatsApp/We
+            Chat)
           </p>
           <p className="text-base text-gray-500 hover:text-gray-700">
             MOB : <a href="tel:+918220144237">+918220144237</a> (WhatsApp)
           </p>
           <a href="mailto:arjunan@appmarines.com">
             {" "}
-            <p className="text-base text-gray-500 hover:text-gray-700">arjunan@appmarines.com</p>
+            <p className="text-base text-gray-500 hover:text-gray-700">
+              arjunan@appmarines.com
+            </p>
           </a>
         </div>
 
         <div className=" border-l-2 hidden lg:block border-gray-600 h-[160px] "></div>
 
-        <div className="flex flex-col gap-3">
+        <div
+          data-aos="fade-up-left"
+          data-aos-delay="200"
+          className="flex flex-col gap-3"
+        >
           <h1 className="text-4xl font-semibold">DEREK NG</h1>
           <p className="text-base text-gray-500 hover:text-gray-700">
-            Phone : <a href="tel:+6596833561">+659683 3561</a> (WhatsApp / We Chat)
+            Phone : <a href="tel:+6596833561">+659683 3561</a> (WhatsApp / We
+            Chat)
           </p>
           <a href="mailto:derekngts@appmarines.com">
             {" "}
-            <p className="text-base text-gray-500 hover:text-gray-700">derekngts@appmarines.com</p>
+            <p className="text-base text-gray-500 hover:text-gray-700">
+              derekngts@appmarines.com
+            </p>
           </a>
         </div>
       </div>
@@ -64,9 +100,22 @@ const ContactUs = () => {
             key={index}
             className=" min-w-[30%] w-[90%]  mx-auto flex flex-col items-center justify-center gap-4 locationCard p-[20px]"
           >
-            <img src={location.image} alt={location.country} />
-            <h1 className="text-4xl">{location.country}</h1>
-            <p className="w-[60%] mx-auto text-center">{location.address}</p>
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              src={location.image}
+              alt={location.country}
+            />
+            <h1 data-aos="fade-down" data-aos-delay="300" className="text-4xl">
+              {location.country}
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="w-[60%] mx-auto text-center"
+            >
+              {location.address}
+            </p>
           </div>
         ))}
       </div>
