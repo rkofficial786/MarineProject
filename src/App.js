@@ -33,9 +33,10 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/:item" element={<ProductPage />} />
+
             <Route path="/:item/:id" element={<OverViewPage />} />
-            <Route path="/contact" element={<ContactUs/>}/>
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/products" element={<ProductPage />} />
           </Routes>
         </ScrollToTop>
       </Router>

@@ -12,7 +12,9 @@ const routeMapper = {
 };
 
 export default function OverViewPage() {
-  const { animationTriggered, ref } = useIntersectionObserver();
+  const { animationTriggered:first, ref:firstRef } = useIntersectionObserver();
+  const { animationTriggered:second, ref:secondRef } = useIntersectionObserver();
+  const { animationTriggered:third, ref:thirdRef } = useIntersectionObserver();
   const navigate = useNavigate();
   let { item, id } = useParams();
 
@@ -126,9 +128,9 @@ export default function OverViewPage() {
         <div className="mt-4 lg:col-span-3 lg:mt-0">
           <div className="mt-10">
             <h2
-              ref={ref}
+              ref={firstRef}
               className={`${
-                animationTriggered ? "widthAnimation" : ""
+                first ? "widthAnimation" : ""
               }  text-xl p-2 pl-6 py-4 font-semibold text-gray-900 bg-slate-200`}
             >
               Our Extensive Product Range
@@ -142,9 +144,9 @@ export default function OverViewPage() {
           </div>
           <div className="mt-10">
           <h2
-              ref={ref}
+              ref={secondRef}
               className={`${
-                animationTriggered ? "widthAnimation" : ""
+                second ? "widthAnimation" : ""
               }  text-xl p-2 pl-6 py-4 font-semibold text-gray-900 bg-slate-200`}
             >
               Quality Assurance
@@ -157,9 +159,9 @@ export default function OverViewPage() {
           </div>
           <div className="mt-10">
           <h2
-              ref={ref}
+              ref={thirdRef}
               className={`${
-                animationTriggered ? "widthAnimation" : ""
+                third ? "widthAnimation" : ""
               }  text-xl p-2 pl-6 py-4 font-semibold text-gray-900 bg-slate-200`}
             >
               Expert Guidance and Support:
