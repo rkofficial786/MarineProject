@@ -6,10 +6,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/Navbar/NavBar";
 
-import ProductPage from "./pages/ProductPage";
+
 import OverViewPage from "./pages/OverViewPage";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
+import Products from "./pages/Products";
+import ProductPage from "./pages/ProductPage";
+import CategoryProduct from "./pages/CategoryProduct";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   useEffect(() => {
@@ -36,7 +40,10 @@ function App() {
 
             <Route path="/:item/:id" element={<OverViewPage />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/products" element={<ProductPage />} />
+            <Route path="/:item" element={<ProductPage />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:category" element={<CategoryProduct />} />
+            <Route path="/products/:category/:slug" element={<ProductDetails />} />
           </Routes>
         </ScrollToTop>
       </Router>

@@ -1,116 +1,69 @@
-import React from "react";
-import { product_data } from "../productData";
-import {RiArrowDropDownLine} from "react-icons/ri"
-import { useNavigate } from "react-router-dom";
-const ProductPage = () => {
-  // Create a dictionary to hold product data for each category
-  const categoryData = {};
-  const navigate =useNavigate()
-  product_data.forEach((data) => {
-    if (!categoryData[data.category]) {
-      categoryData[data.category] = [];
-    }
-    categoryData[data.category].push(data);
-  });
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
-  const categoryList = [
-    "OutBoard Motor",
-    "Diesel Engine & Fishing Nets",
-    "Inflatable Boat",
-    "RIB Boat",
-    "Gasoline Generator",
-    "Water Pump",
-  ];
+import JsonData from "../JsonData";
+
+const routeMapper = {
+  services: "Services",
+  products: "Products",
+  spareParts: "Spare Parts",
+  foodAndBeverages: "Food and Beverages",
+};
+
+export default function ProductPage() {
+  let { item } = useParams();
+  const navigate = useNavigate();
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setProducts(JsonData[item]);
+  }, []);
+
+  if (!JsonData[item]) {
+    return <div>No data</div>;
+  }
 
   return (
-    <div className="max-w-7xl mx-auto mt-[100px]">
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="text-2xl flex justify-center font-bold tracking-tight text-gray-900">
+          {routeMapper[item]}
+        </h2>
 
-
-
-
-{/* nav */}
-
-<nav aria-label="Breadcrumb">
-          <ol
-            role="list"
-            className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8"
-          >
-            <li className="text-sm">
-              <a
-                aria-current="page"
-                className="font-medium cursor-pointer text-gray-500 hover:text-gray-600 "
-                onClick={() => navigate(`/`)}
-              >
-                Home
-              </a>
-            </li>
-            <svg
-              width={16}
-              height={20}
-              viewBox="0 0 16 20"
-              fill="currentColor"
-              aria-hidden="true"
-              className="h-5 w-4 text-gray-300"
+        <div
+          className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 "
+          style={{ cursor: "pointer" }}
+        >
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="group relative hover:scale-[1.1] transition duration-200 ease-in-out"
+              onClick={() => {
+                navigate(`/${item}/${product.id}`);
+              }}
             >
-              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
-            </svg>
-            <li className="text-sm">
-              <a
-                aria-current="page"
-                className="font-medium text-gray-500 hover:text-gray-600"
-              >
-                Products
-              </a>
-            </li>
-          </ol>
-        </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className="max-w-6xl mx-auto">
-        {categoryList.map((category, index) => (
-          <div key={index} className="mb-[100px]">
-            <div className="flex justify-between items-center my-8">
-              <h1 className="text-2xl text-blue-900">{category}</h1>
-
-              <div className="text-lg border-none bg-slate-200 shadow-md px-4 py-1 flex items-center gap-1 justify-center">
-             
-                <button className="">Learn More </button>
-                <RiArrowDropDownLine className="rotate-[270deg] text-3xl mt-1"/>
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <img
+                  src={product.img}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div className="mt-4 flex justify-between text-center">
+                <div>
+                  <h3 className="text-xl font-semibold tracking-tight  text-gray-500">
+                    <a href={product.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {product.name}
+                    </a>
+                  </h3>
+                </div>
               </div>
             </div>
-            <div className="border-b-[1px] border-gray-500"></div>
-            <div className="mt-[30px]">
-              {categoryData[category]?.map((data, index) => (
-                <div
-                  key={index}
-                  className="group cursor-pointer singleProductCategoryPage w-[250px] rounded-xl flex flex-col justify-center items-center gap-3 p-3"
-                >
-                  <img
-                    src={data.description_images[0]}
-                    className="w-[170px] group-hover:scale-105 "
-                    alt=""
-                  />
-                  <h1 className="text-center max-w-[70%] mx-auto">
-                    {data.title}
-                  </h1>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
-};
-
-export default ProductPage;
+}

@@ -73,3 +73,31 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 
+
+  .singleProductCategoryPage2{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+
+  .singleProductCategoryPage2:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform:  scale(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  @media (max-width: 832px) {
+    .singleProductCategoryPage2 ,.singleProductCategoryPage{
+      width: 210px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    .gridContainer {
+      grid-template-columns: 1fr; /* This will display only one item per row */
+    }
+    .singleProductCategoryPage2 ,.singleProductCategoryPage{
+      width: 260px;
+    }
+  }
+
+ 
+  

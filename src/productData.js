@@ -10,6 +10,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "Inflatable Boat",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
@@ -57,6 +59,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "Water Pump",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
@@ -105,6 +109,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "Diesel Engine & Fishing Nets",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
@@ -152,6 +158,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "RIB Boat",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
@@ -199,6 +207,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "Gasoline Generator",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
@@ -246,6 +256,8 @@ export const product_data = [
     mainImages: [product1main1,product1main2],
     description_images: [product11,product12],
     category: "OutBoard Motor",
+    "Model":"GFC3500",
+    "Continuous running (Hrs)":13,
     product_details: {
       Length: "3.1 - 4m",
       Type: "Rigid Boat",
