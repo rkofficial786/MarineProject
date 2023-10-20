@@ -67,13 +67,13 @@ const ProductDetails = () => {
                           <h2
                             className="text-blue-700 mb-1 cursor-pointer hover:text-blue-900"
                             onClick={() =>
-                              navigate(
+                             { navigate(
                                 `/products/${category
                                   .split(" ")
                                   .join("-")}/${data.title
                                   .split(" ")
                                   .join("-")}`
-                              )
+                              );window.location.reload();}
                             }
                           >
                             {data.title}
@@ -136,7 +136,7 @@ const ProductDetails = () => {
                       {Object.entries(data?.product_details).map(
                         ([key, value]) => (
                           <li className=" text-lg font-semibold" key={key}>
-                            {key}: {value}
+                            {key} : <span className="font-normal">{value}</span>
                           </li>
                         )
                       )}
@@ -144,7 +144,7 @@ const ProductDetails = () => {
                     <div className="flex sm:flex-row flex-col">
                       {data?.imageDesc?.map((image, index) => {
                         return (
-                          <div>
+                          <div key={index}>
                             <img
                               className="max-w-[300px] w-[300px] lg:w-[500px] md:max-w-[900px] "
                               src={image}
