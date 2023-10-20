@@ -52,8 +52,8 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-col justify-center">
-                {bannerTexts.map((text) => (
-                  <div className=" flex justify-center items-center lg:justify-start  mb-4 space-x-2  ">
+                {bannerTexts.map((text,index) => (
+                  <div className=" flex justify-center items-center lg:justify-start  mb-4 space-x-2  " key={index}>
                     <div className="text-blue-900 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

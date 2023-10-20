@@ -44,7 +44,7 @@ const TabList = ({ tabs, activeTab, onTabClick }) => {
 const TabPanel = ({ panels, activeTab }) => {
   return (
     <div className="tab-content">
-      {panels.map((panel) => (
+      {panels.map((panel,index) => (
         <div
           className={`tab-pane ${activeTab === panel.id ? "active" : ""}`}
           id={panel.id}

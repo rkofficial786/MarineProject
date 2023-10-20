@@ -1,5 +1,5 @@
 import React from "react";
-import { product_data } from "../data1";
+import { product_data } from "../productData";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
@@ -16,12 +16,12 @@ const Products = () => {
   });
 
   const categoryList = [
-    "OutBoard Motor",
+    "OutBoard Motors",
     "Diesel Engine & Fishing Nets",
-    "Inflatable Boat",
-    "RIB Boat",
-    "Gasoline Generator",
-    "Water Pump",
+    "Inflatable Boats",
+    "RIB Boats",
+    "Gasoline Generators",
+    "Water Pumps",
   ];
 
   return (
@@ -86,6 +86,8 @@ const Products = () => {
             <div className="mt-[30px] grid lg:grid-cols-4 grid-cols-2 gridContainer sm:grid-cols-3 gap-6">
               {categoryData[category]?.slice(0, 8).map((data, index) => (
                 <div 
+                data-aos="fade-up"
+                data-aos-delay="200"
                 onClick={()=>navigate(`/products/${category.split(" ").join("-")}/${data.title.split(" ").join("-")}`)}
                   key={index}
                   className="group cursor-pointer h-[280px] singleProductCategoryPage w-[250px] rounded-xl flex flex-col justify-center items-center gap-3 p-3"

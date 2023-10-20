@@ -2,7 +2,6 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 import JsonData from "../../JsonData";
 
-
 const NavLinks = ({
   navLinkName,
   isDropdownOpen = null,
@@ -61,7 +60,11 @@ const NavLinks = ({
             {itemList.map((item, id) => (
               <li>
                 <a
-                  href={`/${routeMapper[navLinkName]}/${item.id}`}
+                  href={`/${
+                    routeMapper[navLinkName] === "products"
+                      ? `products/${item.name.split(" ").join("-")}`
+                      : `${routeMapper[navLinkName]}/${item.id}`
+                  }`}
                   key={id}
                   className="block min-w-fit hover:text-blue-600 font-semibold py-2"
                 >

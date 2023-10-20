@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { product_data } from "../data1";
+import { product_data } from "../productData";
 import Footer from "../components/Footer";
 
 const CategoryProduct = () => {
@@ -112,9 +112,11 @@ const CategoryProduct = () => {
         {currentItems.map((data, index) => {
           return (
             <div 
+            // data-aos="fade-up"
+            // data-aos-delay="200"
             onClick={()=>navigate(`/products/${category.split(" ").join("-")}/${data.title.split(" ").join("-")}`)}
               key={index}
-              className="group cursor-pointer h-[280px] singleProductCategoryPage2  w-[250px] rounded-xl flex flex-col justify-center items-center gap-3 p-3"
+              className="group cursor-pointer h-[280px] singleProductCategoryPage2 hover:scale-110  w-[250px] rounded-xl flex flex-col justify-center items-center gap-3 p-3"
             >
               <img
                 src={data.imageSlide[0]}
