@@ -29,7 +29,7 @@ const Services = () => {
           >
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {JsonData.spareParts.map((item) => (
-                <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:scale-110 rounded-lg shadowCard  p-3 group">
+                <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700  rounded-lg shadowCard  p-3 group">
                   <div className="m-2 text-justify text-sm">
                     <div className="flex justify-center">
                       <img

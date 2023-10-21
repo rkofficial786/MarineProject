@@ -12,7 +12,7 @@ const NavLinks = ({
 }) => {
   const routeMapper = {
     Home: "",
-    "About Us": "",
+    "About Us": "about",
     Services: "services",
     Products: "products",
     "Spare Parts": "spareParts",

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { product_data } from "../productData";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Footer from "../components/Footer";
 
 const ProductDetails = () => {
   const { slug } = useParams();
@@ -29,6 +30,7 @@ const ProductDetails = () => {
   const [displayedProducts, setDisplayedProducts] = useState(6);
   const [selectedCategory, setSelectedCategory] = useState(null);
   return (
+    <div>
     <div className="max-w-[1690px] mx-auto">
       <div className="flex  ">
         <div className="w-[400px] hidden sm:block mt-[60px] bg-gray-100 p-4 h-fit">
@@ -104,7 +106,7 @@ const ProductDetails = () => {
             <img
               src={mainImage}
               alt=""
-              className=" lg:max-w-[40%] border-2 "
+              className=" lg:max-w-[40%]  "
             />
           </div>
           <div className="flex justify-center items-center">
@@ -134,15 +136,16 @@ const ProductDetails = () => {
                   </h1>
 
                   <div className="flex-1 sm:block flex items-center justify-center ">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mx-auto justify-center items-center  flex-col">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 w-full mx-auto justify-center items-center  flex-col">
                       {Object.entries(data?.product_details).map(
                         ([key, value]) => (
-                          <li className=" text-lg font-semibold" key={key}>
-                            {key} : <span className="font-normal">{value}</span>
+                          <li className="" key={key}>
+                            <span className="text-black  text-base font-bold mr-2">{key}:</span> 
+                            {" "}<span className=" from-neutral-500 tracking-wide">{value}</span>
                           </li>
                         )
                       )}
-                    </ul>
+                    </ul>
                     <div className="flex sm:flex-row flex-col">
                       {data?.imageDesc?.map((image, index) => {
                         return (
@@ -164,6 +167,8 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

@@ -5,34 +5,16 @@ import video from "../media/companyProcessVideo.mp4";
 
 const TabList = ({ tabs, activeTab, onTabClick }) => {
   return (
-    <ul
-      className=" flex sm:flex-row flex-col"
-      id="myTab"
-      role="tablist"
-      style={{ borderBottom: "revert" }}
-    >
+    <ul className="flex sm:flex-row flex-col" role="tablist">
       {tabs.map((tab) => (
-        <li className="nav-item m-[2px] sm:m-3" role="presentation" key={tab.id}>
+        <li className="mr-3" role="presentation" key={tab.id}>
           <button
-            className={`nav-link text-[10px] md:text-[18px] ${activeTab === tab.id ? "active" : ""}`}
+            className={`text-xs md:text-base font-bold py-2 mb-2 px-4 rounded-md focus:outline-none ${activeTab === tab.id ? "bg-white text-black" : "bg-transparent text-white border-white border"}`}
             onClick={() => onTabClick(tab.id)}
             type="button"
             role="tab"
             aria-controls={tab.id}
             aria-selected={activeTab === tab.id}
-            style={{
-              color: activeTab === tab.id ? "white" : "#ddd6ac",
-              // fontSize: "1.1em",
-              fontWeight: 800,
-              letterSpacing: ".08em",
-              textTransform: "uppercase",
-              backgroundColor: "transparent",
-              borderColor: "transparent",
-              borderBottom:
-                activeTab === tab.id
-                  ? "2px solid #fff"
-                  : "2px solid transparent",
-            }}
           >
             {tab.title}
           </button>
@@ -44,19 +26,14 @@ const TabList = ({ tabs, activeTab, onTabClick }) => {
 
 const TabPanel = ({ panels, activeTab }) => {
   return (
-    <div className="tab-content">
+    <div className="lg:mt-4">
       {panels.map((panel) => (
         <div
-          className={`tab-pane w-full mx-auto overflow-hidden md:mt-4 mt-2 text-[14px] md:text-[18px] ${activeTab === panel.id ? "active" : "hidden"}`}
+          className={`text-sm md:text-xl md:max-w-[60%] ${activeTab === panel.id ? "block" : "hidden"}`}
           id={panel.id}
           role="tabpanel"
           aria-labelledby={panel.id}
           key={panel.id}
-          style={{
-            color: "#f6f5e9",
-            // fontSize: "1.2em",
-            // marginTop: "16px",
-          }}
         >
           {panel.content}
         </div>
@@ -95,31 +72,35 @@ const Cta = () => {
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
   };
+
   return (
-    <div className="w-full h-96 flex items-center justify-center text-white cta relative">
-      <div className="absolute w-full h-full" style={{ zIndex: -2 }}>
+    <div className="relative">
+      <div className="w-full h-96 relative overflow-hidden">
         <video
           poster="023.png"
-          className="object-fill"
+          className="object-cover w-full h-full"
           src={video}
-          style={{ height: "100%", width: "100%" }}
-          autoplay="autoplay"
+          autoPlay
           muted
-          loop={true}
+          loop
         />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="px-2 md:mx-8 w-full  text-center lg:text-left py-16 md:px-12 flex lg:justify-between items-center">
-        <div className="w-full flex flex-col lg:flex-row lg:justify-around">
-          <div className="flex justify-between flex-col h-full items-stretch ">
-            <div>
-              <TabList
-                tabs={tabs}
-                activeTab={activeTab}
-                onTabClick={handleTabClick}
-              />
-            </div>
-            <div>
-              <TabPanel panels={panels} activeTab={activeTab} />
+
+      <div className="container mx-auto lg:py-12 py-4 text-white z-10 absolute top-0">
+        <div className="mx-2 md:mx-8 text-center lg:text-left">
+          <div className="flex flex-col lg:flex-row lg:justify-around">
+            <div className="flex flex-col justify-between h-full">
+              <div>
+                <TabList
+                  tabs={tabs}
+                  activeTab={activeTab}
+                  onTabClick={handleTabClick}
+                />
+              </div>
+              <div>
+                <TabPanel panels={panels} activeTab={activeTab} />
+              </div>
             </div>
           </div>
         </div>

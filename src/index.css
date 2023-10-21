@@ -46,25 +46,25 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-/* animations */
+
 
 .widthAnimation {
   animation-name: width;
   animation-duration: 2s;
-  /* animation-fill-mode: forwards; */
+  
 }
 
 @keyframes width {
     0% {
       opacity: 0;
       max-width: 0;
-      padding: 0; /* Optionally add padding animation */
+      
     }
   
     100% {
       opacity: 1;
-      max-width: 100%; /* Adjust as needed */
-      padding: 20px; /* Optionally add padding animation */
+      max-width: 100%; 
+       
     }
   }
 
@@ -82,8 +82,7 @@ body {
   }
 
   .shadowCard:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    filter: drop-shadow(5px 5px 9px gray);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
 
@@ -100,7 +99,7 @@ body {
 
   @media (max-width: 410px) {
     .gridContainer {
-      grid-template-columns: 1fr; /* This will display only one item per row */
+      grid-template-columns: 1fr; 
     }
     .singleProductCategoryPage2 ,.singleProductCategoryPage{
       width: 260px;
@@ -120,4 +119,8 @@ body {
   }
   
  
-  
+  @media(max-width:1028px){
+    .expertiseCard{
+      flex-direction: column !important;
+    }
+  }

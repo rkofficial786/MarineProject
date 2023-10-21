@@ -72,18 +72,18 @@ const Products = () => {
 
               <div onClick={() =>
                     navigate(`/products/${category.split(" ").join("-")}`)
-                  } className="sm:text-lg text-[12px]  border-none bg-slate-200 shadow-md px-1 sm:px-4 py-1 flex items-center gap-1 justify-center hover:scale-95 transition-all ease-in-out duration-200 cursor-pointer">
+                  } className="sm:text-lg text-[14px]  border-none bg-slate-200 shadow-md px-3 min-w-[100px] sm:px-4 py-1 flex items-center gap-1 justify-center hover:scale-95 transition-all ease-in-out duration-200 cursor-pointer">
                 <button
                   
                   className=""
                 >
                   Learn More{" "}
                 </button>
-                <RiArrowDropDownLine className="rotate-[270deg] text-3xl mt-1" />
+                <RiArrowDropDownLine className="rotate-[270deg] md:block hidden text-3xl mt-1" />
               </div>
             </div>
             <div className="border-b-[1px] border-gray-500"></div>
-            <div className="mt-[30px] grid lg:grid-cols-4 grid-cols-2 gridContainer sm:grid-cols-3 gap-6">
+            <div className="mt-[30px] grid lg:grid-cols-4 grid-cols-2 items-center justify-center gridContainer sm:grid-cols-3 gap-6">
               {categoryData[category]?.slice(0, 8).map((data, index) => (
                 <div 
                 data-aos="fade-up"
