@@ -59,13 +59,14 @@ const ProductDetails = () => {
                   </span>
                 </h1>
                 {selectedCategory === category && (
-                  <div className="pl-6">
+                  <div className="pl-6"   data-aos="fade-down"
+                  data-aos-delay="40" >
                     {matchingProducts
                       .slice(0, displayedProducts)
                       .map((data, index) => (
                         <div key={index}>
                           <h2
-                            className="text-blue-700 mb-1 cursor-pointer hover:text-blue-900"
+                            className="text-blue-700 mb-1 cursor-pointer border-b-2 hover:text-blue-900"
                             onClick={() =>
                              { navigate(
                                 `/products/${category
@@ -77,6 +78,7 @@ const ProductDetails = () => {
                             }
                           >
                             {data.title}
+
                           </h2>
                         </div>
                       ))}

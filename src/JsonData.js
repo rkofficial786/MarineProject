@@ -329,6 +329,8 @@ const JsonData = {
       productRange:
         "At APP Engineering & Supplies , we understand the critical role that technical consumables play in the smooth operation of marine engines. Thats why we offer an extensive product catalog, including but not limited to: Engine Lubricants and Oils: Keep your marine engines well-lubricated and protected with our premium-grade oils and lubricants.\n Filters: Ensure clean fuel and air intake for optimal engine performance with our high-quality filters.\nEngine Coolants and Antifreeze: Protect your engines from overheating and corrosion with our top-grade coolants and antifreeze solutions.\nGaskets and Seals: Prevent leaks and ensure airtight sealing with our reliable gaskets and seals.\nAnodes: Safeguard your marine engines from corrosion with our sacrificial anodes.\nMaintenance Kits: Simplify maintenance routines with our convenient and comprehensive maintenance kits.",
       qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+      guide:
+      "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 3,
@@ -339,6 +341,9 @@ const JsonData = {
         "APP Engineering & Supplies  is a leading supplier of high-quality generator spare parts for ships. With a strong focus on quality, reliability, and customer satisfaction, we are dedicated to meeting the specific needs of the marine industry.",
       productRange:
         "At APP Engineering & Supplies , we understand the critical role that generators play in the smooth operation of ships. Thats why we offer an extensive selection of generator spare parts to keep your marine generators running at peak performance. Our product catalog includes, but is not limited to: \nGenerator Filters: Ensure clean fuel and oil for optimal generator efficiency and longevity.\nEngine Components: Find genuine and OEM-approved components to maintain and repair your generators.\nElectrical Parts: Source reliable electrical components to ensure seamless generator operation.\nCooling System Components: Keep your generators cool with top-grade cooling system parts.\nStarters and Alternators: Find high-quality starters and alternators for easy and reliable generator ignition.\nMaintenance Kits: Simplify maintenance routines with our comprehensive generator maintenance kits.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 4,
@@ -347,6 +352,13 @@ const JsonData = {
       name: "Pumps",
       summary:
         "At APP Engineering & Supplies , we understand the vital role that pumps play in the smooth operation of boats and ships. Thats why we offer a comprehensive selection of pumps designed to meet various marine applications. Our product catalog includes, but is not limited to: \nBilge Pumps: Keep your boat or ships bilge area dry and free from water with our efficient bilge pumps.\nCirculation Pumps: Ensure proper circulation and cooling of marine engines and systems with our reliable circulation pumps.\nFreshwater Pumps: Source freshwater effortlessly for various onboard needs with our high-performing freshwater pumps.\nSaltwater Pumps: Tackle saltwater applications with our durable and corrosion-resistant saltwater pumps.\nFuel Transfer Pumps: Safely and efficiently transfer fuel to maintain a steady power supply with our fuel transfer pumps.\nWashdown Pumps: Clean and maintain your vessel easily with our powerful washdown pumps.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+
+        productRange:
+        "At APP Engineering & Supplies , we understand the critical role that generators play in the smooth operation of ships. Thats why we offer an extensive selection of generator spare parts to keep your marine generators running at peak performance. Our product catalog includes, but is not limited to: \nGenerator Filters: Ensure clean fuel and oil for optimal generator efficiency and longevity.\nEngine Components: Find genuine and OEM-approved components to maintain and repair your generators.\nElectrical Parts: Source reliable electrical components to ensure seamless generator operation.\nCooling System Components: Keep your generators cool with top-grade cooling system parts.\nStarters and Alternators: Find high-quality starters and alternators for easy and reliable generator ignition.\nMaintenance Kits: Simplify maintenance routines with our comprehensive generator maintenance kits.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
+        
     },
     {
       id: 5,
@@ -355,6 +367,13 @@ const JsonData = {
       name: "Valves",
       summary:
         "At APP Engineering , we understand the critical role that valves play in the proper functioning of boats and ships. That's why we offer an extensive selection of valves designed to meet various marine applications. Our product catalog includes, but is not limited to.\nBall Valves: Ensure precise control of flow and fluid handling with our efficient ball valves.\nGate Valves: Facilitate smooth and secure shut-off in pipelines and systems with our reliable gate valves.\nGlobe Valves: Control the flow of liquids with our versatile and durable globe valves.\nButterfly Valves: Achieve reliable regulation and isolation in fluid systems with our high-performing butterfly valves.\nCheck Valves: Prevent backflow and protect sensitive equipment with our dependable check valves.\nSafety Relief Valves: Safeguard against excessive pressure and ensure system safety with our robust safety relief valves.",
+
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+
+        productRange:
+        "At APP Engineering & Supplies , we understand the critical role that generators play in the smooth operation of ships. Thats why we offer an extensive selection of generator spare parts to keep your marine generators running at peak performance. Our product catalog includes, but is not limited to: \nGenerator Filters: Ensure clean fuel and oil for optimal generator efficiency and longevity.\nEngine Components: Find genuine and OEM-approved components to maintain and repair your generators.\nElectrical Parts: Source reliable electrical components to ensure seamless generator operation.\nCooling System Components: Keep your generators cool with top-grade cooling system parts.\nStarters and Alternators: Find high-quality starters and alternators for easy and reliable generator ignition.\nMaintenance Kits: Simplify maintenance routines with our comprehensive generator maintenance kits.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
 
     {
@@ -366,6 +385,10 @@ const JsonData = {
         "APP Engineering & Supplies is a trusted provider of high-quality vessel accessories and equipment for the marine industry. With a strong commitment to excellence and customer satisfaction, we cater to the diverse needs of vessel owners and operators.",
       productRange:
         "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
+
     },
   ],
 
@@ -377,6 +400,12 @@ const JsonData = {
       name: "Hydraulic Works, Machining Works and Motor Rewinding",
       summary:
         "APP Engineering  is a reputable company offering a comprehensive range of specialized services for the marine industry. With expertise in hydraulic works, machining works, and motor rewinding, we are dedicated to ensuring the smooth operation and efficiency of marine vessels and systems. Hydraulic Works: Our hydraulic works service encompasses a wide range of solutions, including installation, repair, and maintenance of hydraulic systems. From hydraulic equipment repair to hydraulic cylinder rebuilding, our skilled technicians are equipped to handle all your hydraulic needs with precision and expertise. Machining Works: At APP Engineering, we provide top-notch machining works to meet the unique requirements of the marine industry. Our machining services cover precision machining, fabrication, welding, and more. We use advanced machinery and tools to deliver high-quality results for your critical marine components. Motor Rewinding:Motor rewinding is a vital aspect of ensuring the reliable performance of electrical systems on marine vessels. Our team of experienced electricians specializes in motor rewinding services, offering quick turnaround times and adherence to strict quality standards.",
+
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 8,
@@ -385,6 +414,12 @@ const JsonData = {
       name: "Electrical and Electronic Instrumentation Service for Oil and Gas Vessels",
       summary:
         "APP Engineering  is a trusted name in the marine industry, offering specialized Electrical and Electronic Instrumentation Services for Oil & Gas Vessels. With a deep understanding of the unique requirements of the sector, we are committed to ensuring the safety, reliability, and efficiency of your marine electrical and electronic systems. Our Services: Electrical Services: Our electrical services encompass a wide range of solutions for Oil & Gas Vessels. From electrical equipment installation and maintenance to troubleshooting and repairs, our team of skilled electricians is equipped to handle all your electrical needs with utmost professionalism. Electronic Instrumentation Services: At APP Engineering  , we specialize in Electronic Instrumentation Services, catering specifically to the complex systems onboard Oil & Gas Vessels. Our expertise includes calibration, testing, and repair of electronic instruments and control systems critical to vessel operations. Oil & Gas Industry Compliance. We understand the stringent standards and regulations governing the Oil & Gas industry. Our services are designed to ensure compliance with industry requirements, allowing you to operate with confidence and peace of mind.",
+
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 9,
@@ -393,6 +428,11 @@ const JsonData = {
       name: "Steel, Pipe Fabrication, HydroBlasting and Coating",
       summary:
         "APP Engineering  is a trusted name in the marine industry, offering specialized services in Steel and Pipes Fabrication, Hydro Blasting, and Coating. With a deep understanding of the unique requirements of the sector, we are committed to delivering high-quality solutions for your marine projects. Our Services: Steel and Pipes Fabrication: At APP Engineering  , we excel in steel and pipes fabrication, catering to a diverse range of marine applications. From structural steel components to custom-made pipes and fittings, our skilled fabricators ensure precise and reliable fabrication for your marine projects. Hydro Blasting: Our hydro blasting service utilizes high-pressure water jets to efficiently clean surfaces, removing corrosion, coatings, and other contaminants. Hydro blasting effectively prepares surfaces for coating applications, ensuring optimal adhesion and prolonging the life of your marine structures. Coating: We offer a comprehensive coating service to protect your marine assets from the harsh marine environment. Our coating experts apply high-quality marine coatings, tailored to your specific requirements, to safeguard against corrosion, abrasion, and UV damage.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 10,
@@ -401,6 +441,11 @@ const JsonData = {
       name: "All Types of Crane Service, Repair and Load Testing",
       summary:
         "APP Engineering  is a leading provider of specialized services for all types of cranes in the marine industry. With our extensive expertise and a team of skilled technicians, we ensure the safety, reliability, and efficiency of your marine cranes.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 11,
@@ -409,6 +454,12 @@ const JsonData = {
       name: "GearBox Maintenance and Repair",
       summary:
         "APP Engineering  is a reputable provider of specialized services for Gearbox Maintenance and Repair in the marine industry. With extensive expertise and a dedicated team, we ensure the reliable performance and longevity of your marine gearboxes.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
+        
     },
     {
       id: 12,
@@ -417,6 +468,11 @@ const JsonData = {
       name: "Deck and Engine Riding Crew for Voyage Repairs",
       summary:
         "APP Engineering  is a leading provider of specialized Deck & Engine - Riding Crew services for Voyage Repairs in the marine industry. With extensive experience and a team of skilled professionals, we ensure efficient and reliable support for your vessels during voyage repairs.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 13,
@@ -425,6 +481,11 @@ const JsonData = {
       name: "All types of HVAC work",
       summary:
         "APP Engineering  is a trusted name in the marine industry, offering specialized services for All Types of HVAC (Heating, Ventilation, and Air Conditioning) Works. With extensive expertise and a team of skilled technicians, we ensure optimal comfort and safety onboard your vessels.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 14,
@@ -433,6 +494,11 @@ const JsonData = {
       name: "All Types of Anchorage and Offshore Works",
       summary:
         "APP Engineering  is a trusted name in the marine industry, offering specialized services for All Types of Anchorage and Offshore Works. With extensive expertise and a team of skilled professionals, we ensure safe and efficient operations in anchorage and offshore environments.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 15,
@@ -441,6 +507,11 @@ const JsonData = {
       name: "Piping and Accommodation Insulation Works",
       summary:
         "APP Engineering  is a trusted name in the marine industry, offering specialized services for Piping and Accommodation Insulation. With a dedicated team of skilled professionals, we ensure the thermal efficiency, comfort, and safety of your marine vessels.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 16,
@@ -449,6 +520,11 @@ const JsonData = {
       name: "All types of Pumps",
       summary:
         "APP Engineering  is a leading provider of specialized services for Centrifugal Pumps, Rotary Pumps, Piston Pumps, and Reciprocating Pumps in the marine industry. With extensive expertise and a team of skilled technicians, we ensure the reliable performance and efficiency of your marine pumps.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 17,
@@ -457,6 +533,11 @@ const JsonData = {
       name: "Ship Chandler Agents",
       summary:
         "APP Engineering  is a reputable provider of Ship Chandlers Agent services, catering to the needs of vessels in the marine industry. With a wealth of experience and a dedicated team, we ensure smooth and efficient operations for your vessels.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 18,
@@ -465,6 +546,11 @@ const JsonData = {
       name: "Ship Chandelling Support During Dry Docking",
       summary:
         "APP Engineering  is a leading provider of specialized Ship Chandelling Support services during Dry Docking (DDX) for vessels in the marine industry. With extensive expertise and a dedicated team, we ensure a seamless and efficient dry-docking experience for your ships.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of reliable and durable accessories and equipment in enhancing vessel performance and safety. Thats why we offer an extensive selection of top-notch products, including, but not limited to: Mooring and Docking Accessories: Find essential equipment for secure mooring and docking operations. Safety Equipment: Ensure the safety of crew members and passengers with our comprehensive safety gear and equipment. Lighting Solutions: Illuminate your vessel with our efficient and long-lasting lighting solutions. Deck Hardware: Discover a wide range of deck hardware items for various marine applications. Navigation Aids: Enhance navigational capabilities with our high-precision navigation aids. Communication Devices: Stay connected with our reliable communication devices for marine use.",
+        qa: "We prioritize quality above all else. All our marine engine technical consumables are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our products are built to last and withstand the harsh marine environment.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
   ],
 
@@ -521,6 +607,13 @@ const JsonData = {
       name: "Victuals – Fresh & Extensive Range of Sea Foods.",
       summary:
         "At APP Engineering & Supply, we understand the importance of providing top-quality bonded products to enhance onboard experiences. That's why we offer an extensive selection of duty-free items, including, but not limited to:\n\n Beers: Choose from a variety of refreshing beers, both domestic and international, to quench your thirst.\n\n Wines: Indulge in a fine selection of red, white, and sparkling wines from renowned vineyards.\n\n Liquors: Discover an array of premium liquors, including whiskey, vodka, rum, gin, and more.\n\n Cigarettes: Find a range of popular cigarette brands to cater to different preferences.",
+
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of offering a diverse and top-quality selection of culinary delights to enhance the onboard dining experience. Our extensive range includes a variety of delightful dishes, catering to various tastes and preferences. Indulge in a wide selection of beverages, from soft drinks and juices to premium alcoholic options. Additionally, we offer an assortment of snacks and treats, perfect for satisfying cravings during your journey. Explore our curated collection of specialty foods, all sourced from reputable producers known for their exceptional quality. With APP, you can expect nothing but the best for your onboard dining needs.",
+
+        qa: "We prioritize quality above all else. All our food and beverage products are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our offerings are crafted with care to ensure a delightful dining experience.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 26,
@@ -529,6 +622,12 @@ const JsonData = {
       name: "Poultry, Red Meat, Fruits, Vegetables, Diary Products & Condiments Bonded, Slop Chest Products",
       summary:
         "At APP Engineering & Supply, we understand the importance of top-quality provisions for the well-being of crews at sea. That's why we offer an extensive selection of fresh, frozen, and preserved food products, including, but not limited to Poultry: Discover a variety of succulent poultry products, carefully sourced for their taste and freshness. Red Meat: Indulge in premium cuts of red meat, perfect for creating delicious and satisfying meals. Fruits and Vegetables: Savor the goodness of fresh fruits and vegetables, packed with essential nutrients. Dairy Products: Enjoy a wide range of dairy delights, from creamy cheeses to wholesome milk and more. Condiments: Enhance your culinary creations with our flavorful selection of condiments and spices. Slop Chest Products: Stock up on a variety of snacks, beverages, and essentials for crew members' convenience.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of offering a diverse and top-quality selection of culinary delights to enhance the onboard dining experience. Our extensive range includes a variety of delightful dishes, catering to various tastes and preferences. Indulge in a wide selection of beverages, from soft drinks and juices to premium alcoholic options. Additionally, we offer an assortment of snacks and treats, perfect for satisfying cravings during your journey. Explore our curated collection of specialty foods, all sourced from reputable producers known for their exceptional quality. With APP, you can expect nothing but the best for your onboard dining needs.",
+
+        qa: "We prioritize quality above all else. All our food and beverage products are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our offerings are crafted with care to ensure a delightful dining experience.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
     {
       id: 27,
@@ -537,6 +636,12 @@ const JsonData = {
       name: "Wide Range of Bonded Products Like Beers, Wines,Liquors & Cigarettes",
       summary:
         "At APP Engineering & Supply, we understand the importance of providing top-quality bonded products to enhance onboard experiences. That's why we offer an extensive selection of duty-free items, including, but not limited to:\n\n Beers: Choose from a variety of refreshing beers, both domestic and international, to quench your thirst.\n\n Wines: Indulge in a fine selection of red, white, and sparkling wines from renowned vineyards.\n\n Liquors: Discover an array of premium liquors, including whiskey, vodka, rum, gin, and more.\n\n Cigarettes: Find a range of popular cigarette brands to cater to different preferences.",
+        productRange:
+        "At APP Engineering & Supplies , we understand the importance of offering a diverse and top-quality selection of culinary delights to enhance the onboard dining experience. Our extensive range includes a variety of delightful dishes, catering to various tastes and preferences. Indulge in a wide selection of beverages, from soft drinks and juices to premium alcoholic options. Additionally, we offer an assortment of snacks and treats, perfect for satisfying cravings during your journey. Explore our curated collection of specialty foods, all sourced from reputable producers known for their exceptional quality. With APP, you can expect nothing but the best for your onboard dining needs.",
+
+        qa: "We prioritize quality above all else. All our food and beverage products are sourced from reputable manufacturers known for their superior craftsmanship and adherence to strict quality standards. You can trust that our offerings are crafted with care to ensure a delightful dining experience.",
+        guide:
+        "Our experienced team of professionals is always ready to assist you. Whether you need guidance on selecting the right spare part or technical support, we're here to provide timely and knowledgeable assistance.",
     },
   ],
 };

@@ -13,11 +13,10 @@ const handleDownload = () => {
   anchor.target = "_blank";
   anchor.click();
 };
-const handleServicepage = ()=> {
+const handleServicepage = () => {
   const anchor = document.createElement("a");
   anchor.target = "";
-
-}
+};
 const links = [
   { name: "Goto Our List of Service Pages", func: handleServicepage },
   {
@@ -42,7 +41,12 @@ export default function Intro() {
     };
   }, []);
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000"
+      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+    >
       <img
         src={images[currentImageIndex]}
         alt=""

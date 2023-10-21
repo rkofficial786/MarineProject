@@ -54,8 +54,8 @@ const NavLinks = ({
               isDropdownOpen
                 ? "transform translate-y-0 opacity-100"
                 : "transform translate-y-2 opacity-0"
-            } transition-transform duration-300 `}
-            style={{ width: "400px" }}
+            } transition-transform duration-300 ${itemList.length>6 ?"grid grid-cols-2 w-[600px] gap-x-3 gap-y-1":"w-[400px]"}`}
+            // style={{ width: "400px" }}
           >
             {itemList.map((item, id) => (
               <li>
@@ -66,7 +66,7 @@ const NavLinks = ({
                       : `${routeMapper[navLinkName]}/${item.id}`
                   }`}
                   key={id}
-                  className="block min-w-fit hover:text-blue-600 font-semibold py-2"
+                  className={`block min-w-fit hover:text-blue-600 font-semibold ${itemList.length>6?"":"py-2"}`}
                 >
                   {item.name}
                 </a>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavLinks from "../Navbar/NavLinks";
 import NavBarDesign from "../Navbar/NavbarDesign";
 
@@ -14,6 +14,8 @@ const Navbar = () => {
     setisOpen(!isOpen);
   }
 
+  const navigate =useNavigate()
+
   useEffect(() => {
     const scrollHandler = () => {
       window.pageYOffset > 10 ? setTop(false) : setTop(true);
@@ -24,14 +26,15 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white text-gray-800 py-2 ">
-      <div className="container mx-5 flex justify-between items-center">
+      <div className="container  flex justify-between items-center">
         <div className="flex items-center">
           <img
             src={ImageData.ImageData.logo}
             alt="logo"
-            className="ml-0 mr-0"
-            width={500}
-            height={600}
+            onClick={()=>navigate("/")}
+            className="ml-0 mr-0 w-[300px]  md:w-[500px] cursor-pointer"
+            // width={500}
+            // height={600}
             style={{ objectFit: "cover" }}
           />
           
@@ -68,13 +71,14 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`fixed z-10 transition-transform duration-400 ease-in-out transit flex  left-0 w-full h-auto rounded-md p-12 bg-white rounded-lg block lg:hidden shadow-xl top-14 ${
+            className={`fixed z-10 transition-transform duration-400 ease-in-out transit flex  justify-center items-center left-0 w-full h-auto rounded-md p-12 bg-white  lg:hidden shadow-xl top-14 ${
               isOpen ? "block" : "hidden"
             } `}
-            style={{ top: "80px" }}
+            // style={{ top: "80px" }}
           >
-            <ul className=" ">
+            <ul className="flex justify-center items-center flex-col ">
               <NavBarDesign />
+              
             </ul>
           </div>
         </div>

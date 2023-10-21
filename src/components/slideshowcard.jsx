@@ -36,10 +36,10 @@ const SlideshowCard = ({ itemsArray }) => {
         {itemsArray.map((image, index) => (
           <div
             key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
+            className={`absolute top-0 left-0 w-full h-full transition-all duration-700 ${
               index === currentIndex
-                ? "opacity-100"
-                : "opacity-0 pointer-events-none"
+                ? "opacity-100 scale-100 rotate-[360deg] "
+                : "opacity-0 scale-0 pointer-events-none rotate-0"
             }`}
           >
             <img

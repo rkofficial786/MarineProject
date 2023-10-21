@@ -6,15 +6,15 @@ import video from "../media/companyProcessVideo.mp4";
 const TabList = ({ tabs, activeTab, onTabClick }) => {
   return (
     <ul
-      className="nav nav-underline nav-tabs flex sm:flex-row flex-col"
+      className=" flex sm:flex-row flex-col"
       id="myTab"
       role="tablist"
       style={{ borderBottom: "revert" }}
     >
       {tabs.map((tab) => (
-        <li className="nav-item m-3" role="presentation" key={tab.id}>
+        <li className="nav-item m-[2px] sm:m-3" role="presentation" key={tab.id}>
           <button
-            className={`nav-link ${activeTab === tab.id ? "active" : ""}`}
+            className={`nav-link text-[10px] md:text-[18px] ${activeTab === tab.id ? "active" : ""}`}
             onClick={() => onTabClick(tab.id)}
             type="button"
             role="tab"
@@ -22,7 +22,7 @@ const TabList = ({ tabs, activeTab, onTabClick }) => {
             aria-selected={activeTab === tab.id}
             style={{
               color: activeTab === tab.id ? "white" : "#ddd6ac",
-              fontSize: "1.1em",
+              // fontSize: "1.1em",
               fontWeight: 800,
               letterSpacing: ".08em",
               textTransform: "uppercase",
@@ -47,15 +47,15 @@ const TabPanel = ({ panels, activeTab }) => {
     <div className="tab-content">
       {panels.map((panel) => (
         <div
-          className={`tab-pane ${activeTab === panel.id ? "active" : "hidden"}`}
+          className={`tab-pane w-full mx-auto overflow-hidden md:mt-4 mt-2 text-[14px] md:text-[18px] ${activeTab === panel.id ? "active" : "hidden"}`}
           id={panel.id}
           role="tabpanel"
           aria-labelledby={panel.id}
           key={panel.id}
           style={{
             color: "#f6f5e9",
-            fontSize: "1.2em",
-            marginTop: "16px",
+            // fontSize: "1.2em",
+            // marginTop: "16px",
           }}
         >
           {panel.content}
@@ -108,9 +108,9 @@ const Cta = () => {
           loop={true}
         />
       </div>
-      <div className="mx-8 w-full  text-center lg:text-left py-16 px-12 flex lg:justify-between items-center">
+      <div className="px-2 md:mx-8 w-full  text-center lg:text-left py-16 md:px-12 flex lg:justify-between items-center">
         <div className="w-full flex flex-col lg:flex-row lg:justify-around">
-          <div>
+          <div className="flex justify-between flex-col h-full items-stretch ">
             <div>
               <TabList
                 tabs={tabs}
