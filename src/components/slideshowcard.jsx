@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 const SlideshowCard = ({ itemsArray }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   useEffect(() => {
     AOS.init();
@@ -38,7 +39,7 @@ const SlideshowCard = ({ itemsArray }) => {
             key={index}
             className={`absolute top-0 left-0 w-full h-full transition-all duration-700 ${
               index === currentIndex
-                ? "opacity-100 scale-100 rotate-[360deg] "
+                ? "opacity-100 scale-100  "
                 : "opacity-0 scale-0 pointer-events-none rotate-0"
             }`}
           >

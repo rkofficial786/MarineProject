@@ -1,0 +1,200 @@
+
+
+.carousel {
+  overflow: hidden;
+  
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 1s;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  width: 100vw;
+  margin: 0px auto;
+}
+
+.carousel_item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 490px; */
+  background-color: #fff;
+  position: relative;
+  width: 100vw;
+  margin: 0px auto;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel_item_text {
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 30px;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 50;
+  text-align: center; /* Adjust the text alignment if needed */
+}
+
+.carousel_item_text h1 {
+  color: #fff;
+
+  font-size: 50px;
+
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+}
+.carousel_item_text p {
+  color: #fff;
+  max-width: 1004px;
+
+  font-size: 22px;
+
+  font-weight: 600;
+  line-height: 28px; /* 127.273% */
+}
+.carousel_item_text button {
+  
+
+  border-radius: 180px;
+  background: rgb(255, 255, 255);
+
+  color: rgb(0, 102, 176);
+
+  display: flex;
+  width: 160px;
+  height: 40px;
+  padding: 6px 30px;
+  justify-content: center;
+  align-items: center;
+
+
+  font-size: 18px;
+   cursor: pointer;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.carousel_img {
+  width: 100vw;
+  object-fit: cover;
+  height: 900px;
+ 
+}
+
+/* final stage */
+
+.carouselButton {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+}
+
+.buttonArrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator_buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator_symbol {
+  color: #26343f;
+}
+
+.indicator_symbol_active {
+  color: #ffffff;
+}
+
+
+
+
+
+@media (max-width: 1115px) {
+  .carousel_item_text h1 {
+    color: #fff;
+
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 600;
+    /* 100% */
+  }
+  .carousel_item_text {
+    gap: 20px;
+  }
+  .carousel_item_text p {
+    color: #fff;
+    max-width: 804px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+    line-height: normal; /* 127.273% */
+  }
+
+  .carousel_item_text {
+    white-space: normal;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    padding: 20px;
+  }
+}
+

@@ -3,7 +3,7 @@
 }
 
 .nav-link:hover {
-    color: #a0aec0;
+    color: gray;
     /* Change to your preferred hover color */
 }
 
@@ -22,6 +22,15 @@
     cursor: pointer;
 }
 
+.separator {
+    border-left: 2px solid #262523;
+    height: 100%; /* Adjust the height as per your design */
+    margin: 0 0.5rem; /* Adjust the spacing as per your design */
+}
+
+.lower-nav-bg {
+    background-color: #333333;
+}
 
 
 

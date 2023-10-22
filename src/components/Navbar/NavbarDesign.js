@@ -13,9 +13,11 @@ const NavBarDesign = () => {
   };
 
   return (
-    <>
+    <div className="lg:flex lg:gap-3">
       <NavLinks navLinkName="Home" />
+      <div className="separator"></div>
       <NavLinks navLinkName="About Us" />
+      <div className="separator"></div>
       <NavLinks
         navLinkName="Services"
         isDropdownOpen={isServicesOpen}
@@ -24,6 +26,7 @@ const NavBarDesign = () => {
         itemList={JsonData.services}
         isDropDownNeeded={true}
       />
+      <div className="separator"></div>
       <NavLinks
         navLinkName="Products"
         isDropdownOpen={isProductOpen}
@@ -32,6 +35,7 @@ const NavBarDesign = () => {
         itemList={JsonData.products}
         isDropDownNeeded={true}
       />
+      <div className="separator"></div>
       <NavLinks
         navLinkName="Spare Parts"
         isDropdownOpen={isSparePartOpen}
@@ -40,6 +44,7 @@ const NavBarDesign = () => {
         itemList={JsonData.spareParts}
         isDropDownNeeded={true}
       />
+      <div className="separator"></div>
       <NavLinks
         navLinkName="Food and Beverages"
         isDropdownOpen={isFnBOpen}
@@ -48,9 +53,11 @@ const NavBarDesign = () => {
         itemList={JsonData.foodAndBeverages}
         isDropDownNeeded={true}
       />
+      <div className="separator"></div>
       <NavLinks navLinkName="Contact Us" isDropDownNeeded={false} />
-    </>
+    </div>
   );
+  
 };
 
 export default NavBarDesign;

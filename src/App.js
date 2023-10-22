@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/Navbar/NavBar";
 
-
 import OverViewPage from "./pages/OverViewPage";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
@@ -45,7 +44,10 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/products/:category" element={<CategoryProduct />} />
-            <Route path="/products/:category/:slug" element={<ProductDetails />} />
+            <Route
+              path="/products/:category/:slug"
+              element={<ProductDetails />}
+            />
           </Routes>
         </ScrollToTop>
       </Router>
