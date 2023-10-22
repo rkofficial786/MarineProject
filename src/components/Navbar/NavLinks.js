@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import JsonData from "../../JsonData";
+import { Link } from "react-router-dom";
 
 const NavLinks = ({
   navLinkName,
@@ -23,12 +24,12 @@ const NavLinks = ({
   if (!isDropDownNeeded) {
     return (
       <li className="relative group nav-link-li p-3 lg:p-0">
-        <a
-          href={`/${routeMapper[navLinkName]}`}
+        <Link
+          to={`/${routeMapper[navLinkName]}`}
           className="nav-link px-2 font-extrabold text-gray-500 hover:text-blue-900"
         >
           {navLinkName}
-        </a>
+        </Link>
       </li>
     );
   }
@@ -41,12 +42,12 @@ const NavLinks = ({
         onMouseEnter={() => toggleDropdown(isDropdownOpen, setDropDownOpen)}
         onMouseLeave={() => toggleDropdown(isDropdownOpen, setDropDownOpen)}
       >
-        <a
-          href={`/${routeMapper[navLinkName]}`}
+        <Link
+          to={`/${routeMapper[navLinkName]}`}
           className="nav-link px-4 font-extrabold text-gray-500 hover:text-blue-900"
         >
           {navLinkName}
-        </a>
+        </Link>
 
         {isDropDownNeeded && (
           <ul
@@ -59,8 +60,8 @@ const NavLinks = ({
           >
             {itemList.map((item, id) => (
               <li>
-                <a
-                  href={`/${
+                <Link
+                  to={`/${
                     routeMapper[navLinkName] === "products"
                       ? `products/${item.name.split(" ").join("-")}`
                       : `${routeMapper[navLinkName]}/${item.id}`
@@ -69,7 +70,7 @@ const NavLinks = ({
                   className={`block min-w-fit hover:text-blue-600 font-semibold ${itemList.length>6?"":"py-2"}`}
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
