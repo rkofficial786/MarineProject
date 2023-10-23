@@ -66,10 +66,10 @@ const Slider = ({data,bg}) => {
 
       <div className="slider-controler m-[30px]">
         <div className="swiper-button-prev slider-arrow mt-16">
-        <IoArrowBackOutline className=""  />
+        <IoArrowBackOutline className="text-white hover:scale-90 "  />
         </div>
         <div className="swiper-button-next slider-arrow ">
-        <IoArrowForwardOutline className=''/>
+        <IoArrowForwardOutline className='text-white  hover:scale-90'/>
         </div>
         <div className="swiper-pagination "></div>
       </div>

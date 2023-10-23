@@ -16,7 +16,7 @@ export const CarouselItem = ({ item, width }) => {
       >
         <h1>{item.heading}</h1>
         <p>{item.text}</p>
-        <button >More info</button>
+        <button onClick={()=>navigate("/products")}>More info</button>
       </div>
     </div>
   );
