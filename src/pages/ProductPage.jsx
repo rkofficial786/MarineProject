@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import JsonData from "../JsonData";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const routeMapper = {
   services: "Services",
@@ -18,7 +20,7 @@ export default function ProductPage() {
 
   useEffect(() => {
     setProducts(JsonData[item]);
-  }, []);
+  }, [item]);
 
   if (!JsonData[item]) {
     return <div>No data</div>;
@@ -53,10 +55,10 @@ export default function ProductPage() {
               <div className="mt-4 flex justify-between text-center">
                 <div>
                   <h3 className="text-xl font-semibold tracking-tight  text-gray-500">
-                    <a href={product.href}>
+                    <Link to={product.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
-                    </a>
+                    </Link>
                   </h3>
                 </div>
               </div>
@@ -64,6 +66,7 @@ export default function ProductPage() {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

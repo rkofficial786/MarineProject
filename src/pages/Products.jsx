@@ -4,6 +4,7 @@ import { product_data } from "../productData";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 const Products = () => {
   // Create a dictionary to hold product data for each category
   const categoryData = {};
@@ -35,13 +36,13 @@ const Products = () => {
           className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8"
         >
           <li className="text-sm">
-            <a
+            <Link
               aria-current="page"
               className="font-medium cursor-pointer text-gray-500 hover:text-gray-600 "
               onClick={() => navigate(`/`)}
             >
               Home
-            </a>
+            </Link>
           </li>
           <svg
             width={16}
@@ -54,12 +55,12 @@ const Products = () => {
             <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
           </svg>
           <li className="text-sm">
-            <a
+            <Link
               aria-current="page"
               className="font-medium text-gray-500 hover:text-gray-600"
             >
               Products
-            </a>
+            </Link>
           </li>
         </ol>
       </nav>

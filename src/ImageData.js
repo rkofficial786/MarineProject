@@ -86,7 +86,7 @@ import img96 from "./media/images/96.jpg";
 import img97 from "./media/images/97.jpg";
 
 import img3 from "./media/images/3.png";
-import img6 from "./media/images/6.png";
+import img6 from "./media/images/611.jpg";
 import img9 from "./media/images/9.png";
 import img12 from "./media/images/12.png";
 import img15 from "./media/images/15.png";

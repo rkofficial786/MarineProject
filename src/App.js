@@ -14,6 +14,7 @@ import ProductPage from "./pages/ProductPage";
 import CategoryProduct from "./pages/CategoryProduct";
 import ProductDetails from "./pages/ProductDetails";
 import About from "./pages/About";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   useEffect(() => {
@@ -43,11 +44,13 @@ function App() {
             <Route path="/:item" element={<ProductPage />} />
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
+
             <Route path="/products/:category" element={<CategoryProduct />} />
             <Route
               path="/products/:category/:slug"
               element={<ProductDetails />}
             />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </ScrollToTop>
       </Router>

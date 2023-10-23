@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { product_data } from "../productData";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const CategoryProduct = () => {
   const { category } = useParams();
@@ -43,13 +44,13 @@ const CategoryProduct = () => {
             className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8"
           >
             <li className="text-sm">
-              <a
+              <Link
                 aria-current="page"
                 className="font-medium cursor-pointer text-gray-500 hover:text-gray-600 "
                 onClick={() => navigate(`/`)}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <svg
               width={16}
@@ -62,13 +63,13 @@ const CategoryProduct = () => {
               <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
             </svg>
             <li className="text-sm">
-              <a
+              <Link
                 aria-current="page"
                 className="font-medium text-gray-500 cursor-pointer hover:text-gray-600"
                 onClick={() => navigate(`/products`)}
               >
                 Products
-              </a>
+              </Link>
             </li>
 
             <svg
@@ -82,12 +83,12 @@ const CategoryProduct = () => {
               <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
             </svg>
             <li className="text-sm">
-              <a
+              <Link
                 aria-current="page"
                 className="font-medium text-gray-500 hover:text-gray-600"
               >
                 {category.split("-").join(" ")}
-              </a>
+              </Link>
             </li>
           </ol>
         </nav>
