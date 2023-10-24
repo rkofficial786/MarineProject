@@ -3,7 +3,7 @@ import servicesImg from "../../images/About/WhatsApp Image 2023-10-21 at 17.39.3
 
 export default function Intro2() {
   return (
-    <div className="relative bg-white py-24 sm:py-32 overflow-hidden flex items-center justify-center">
+    <div className="relative bg-white py-4 sm:py-4 overflow-hidden flex items-center justify-center">
       <div className="flex flex-col lg:flex-row md:gap-14 justify-center items-center">
         <div
           data-aos="fade-right"

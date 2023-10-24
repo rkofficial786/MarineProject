@@ -2,27 +2,30 @@ import React from "react";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import boatImg from "../images/boat3.png";
+import Intro2 from "../components/about/Intro2";
 const locationsData = [
   {
     country: "India",
     address:
       "NO: 44, Govinthan nagar , Thenpathi (PO) Sirkali(TK) muayiladuthurai (district) Tamilnadu , India, pin :609111",
     image: require("../media/flags/india.bba9449f.png"),
+    companyName:"APP Engineering & Supplies"
   },
   {
     country: "Singapore",
     address: "#08-14 PS100 100 PECK SEAH STREET SINGAPORE (079333)",
     image: require("../media/flags/singapore.2536222e.png"),
+    companyName:"APP Marine Power Machinery"
   },
 ];
 
 const ContactUs = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-4">
       {/* <img src={require("../images/contact.c728fa4c.png")} className="w-screen" alt="" /> */}
 
       <div className="flex    flex-col  py-0 justify-around text-center lg:text-left">
-        <div
+        {/* <div
           className=" flex flex-col justify-center items-center"
           data-aos="zoom-in"
           data-aos-delay="200"
@@ -35,7 +38,8 @@ const ContactUs = () => {
             your order, feel free to get in touch with us. Our team is here to
             help you!
           </div>
-        </div>
+        </div> */}
+        <Intro2/>
         {/* 
         <div className="flex w-auto" data-aos="fade-up" data-aos-delay="700">
           <img
@@ -106,9 +110,11 @@ const ContactUs = () => {
               src={location.image}
               alt={location.country}
             />
+            <h1  data-aos="fade-down" data-aos-delay="300" className="text-2xl text-center">{location.companyName}</h1>
             <h1 data-aos="fade-down" data-aos-delay="300" className="text-4xl">
               {location.country}
             </h1>
+            
             <p
               data-aos="fade-up"
               data-aos-delay="300"

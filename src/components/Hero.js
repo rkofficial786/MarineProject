@@ -43,8 +43,7 @@ const Hero = () => {
               data-aos-delay="200"
             >
               <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
-                {/* We build digital solutions to help businesses scale */}A
-                Company of People's Trust
+                {/* We build digital solutions to help businesses scale */}We have Earned People's Trust
               </h1>
 
               <div className="text-xl font-semibold tracking-tight mb-8 text-gray-500">

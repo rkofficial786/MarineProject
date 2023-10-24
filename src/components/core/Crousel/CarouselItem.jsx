@@ -12,6 +12,9 @@ export const CarouselItem = ({ item, width }) => {
       <div
      
         className=  "carousel_item_text"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
         
       >
         <h1>{item.heading}</h1>
