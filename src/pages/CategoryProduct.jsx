@@ -121,8 +121,9 @@ const CategoryProduct = () => {
             >
               <img
                 src={data.imageSlide[0]}
-                className="w-[170px] group-hover:scale-105 "
+                className="w-[170px] h-auto object-center group-hover:scale-105 "
                 alt=""
+                loading="lazy"
               />
               <h1 className="text-center sm:max-w-[70%] max-w-[95%] mx-auto">
                 {data.title.length > 70 ? (

@@ -119,6 +119,7 @@ export default function OverViewPage() {
               <img
                 src={selectedDataItem.img}
                 alt={selectedDataItem.name}
+                loading="lazy"
                 className="h-full w-96 object-cover object-center"
               />
             </div>

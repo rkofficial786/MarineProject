@@ -38,6 +38,7 @@ const Services = () => {
                         className="rounded-t group-hover:scale-[1.15] h-[140px] w-[280px] transition duration-1000 ease-in-out"
                         // style={{ height: "140px" }}
                         src={item.img}
+                        loading="lazy"
                       />
                     </div>
                     <h2 className="font-semibold my-4 text-2xl text-center">

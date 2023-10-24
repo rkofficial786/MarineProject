@@ -46,6 +46,7 @@ const SlideshowCard = ({ itemsArray }) => {
             <img
               src={image.img}
               alt={image.name}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>

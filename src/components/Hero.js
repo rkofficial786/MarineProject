@@ -82,6 +82,7 @@ const Hero = () => {
                 alt="card img"
                 className="rounded-t float-right duration-1000 w-full"
                 src={boatImg}
+                loading="lazy"
               />
             </div>
           </div>

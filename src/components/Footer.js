@@ -25,6 +25,7 @@ const Footer = () => {
                   alt="Logo"
                   style={logos}
                   className="w-full object-fill md:w-auto"
+                  loading="lazy"
                 />
               </div>
             </div>

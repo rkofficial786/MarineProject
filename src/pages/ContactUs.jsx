@@ -109,6 +109,7 @@ const ContactUs = () => {
               data-aos-delay="200"
               src={location.image}
               alt={location.country}
+              loading="lazy"
             />
             <h1  data-aos="fade-down" data-aos-delay="300" className="text-2xl text-center">{location.companyName}</h1>
             <h1 data-aos="fade-down" data-aos-delay="300" className="text-4xl">

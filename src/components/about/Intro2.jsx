@@ -15,6 +15,7 @@ export default function Intro2() {
             alt="card img"
             className="rounded-t float-right duration-1000 w-full"
             src={servicesImg}
+            loading="lazy"
           />
         </div>
         <div

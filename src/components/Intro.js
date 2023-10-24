@@ -50,6 +50,7 @@ export default function Intro() {
       <img
         src={images[currentImageIndex]}
         alt=""
+        loading="lazy"
         className="img-fade fade absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
       <div id="overlay"></div>

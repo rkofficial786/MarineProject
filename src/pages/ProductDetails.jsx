@@ -106,6 +106,7 @@ const ProductDetails = () => {
             <img
               src={mainImage}
               alt=""
+              loading="lazy"
               className=" lg:max-w-[40%]  "
             />
           </div>
@@ -114,6 +115,7 @@ const ProductDetails = () => {
               <img
                 key={index}
                 src={image}
+                loading="lazy"
                 alt=""
                 className={`w-16 h-16 object-cover mx-2 cursor-pointer ${
                   mainImage === image ? "border-2 border-cyan-500" : " border-2"
@@ -154,6 +156,7 @@ const ProductDetails = () => {
                               className="max-w-[300px] w-[300px] lg:w-[500px] md:max-w-[900px] "
                               src={image}
                               alt=""
+                              loading="lazy"
                             />
                           </div>
                         );

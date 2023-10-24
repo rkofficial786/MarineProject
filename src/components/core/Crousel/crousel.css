@@ -175,11 +175,11 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     width: 100%;
     top: 50%;
-    left: 50%;
+    left: 2%;
     justify-content: center;
     align-items: center;
 

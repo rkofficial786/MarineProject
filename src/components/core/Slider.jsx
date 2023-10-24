@@ -55,7 +55,7 @@ const Slider = ({data,bg}) => {
         return (
             <div className='relative border-2'>
             <SwiperSlide>
-            <img src={image.img} alt="slide_image" className='swiperImage' />
+            <img src={image.img} alt="slide_image" className='swiperImage' loading="lazy" />
             
             <h1 className='text-2xl text-white font-bold text-center '>{image.name}</h1>
           </SwiperSlide>

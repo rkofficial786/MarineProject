@@ -8,7 +8,7 @@ export const CarouselItem = ({ item, width }) => {
   return (
     <div className="carousel_item" style={{ width: width }}>
       <div className="layer"></div>
-      <img className="carousel_img" alt="" src={item.image} />
+      <img className="carousel_img"  alt="" src={item.image} />
       <div
      
         className=  "carousel_item_text"
