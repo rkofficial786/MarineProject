@@ -9,6 +9,7 @@ import WhyChooseAPP from "../components/about/WhyChoose";
 import DiscoverAbout from "../components/about/DiscoverAbout";
 import Footer from "../components/Footer";
 import { data } from "autoprefixer";
+import { Helmet } from "react-helmet";
 
 const expertiseData = [
   {
@@ -42,6 +43,12 @@ const expertiseData = [
 const About = () => {
   return (
     <div>
+      <Helmet>
+  <title>APP Engineering | About Us</title>
+  <meta name="description" content="Learn about APP Engineering, a leading provider of specialized Ship Chandelling Support services during Dry Docking (DDX) for vessels in the marine industry." />
+  <meta name="keywords" content="APP Engineering, Ship Chandelling Support, Dry Docking, marine industry" />
+</Helmet>
+
       <div className="max-w-7xl mx-auto">
         <Header />
         <div className="flex mt-[80px] flex-col gap-14">

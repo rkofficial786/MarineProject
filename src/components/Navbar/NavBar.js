@@ -46,7 +46,8 @@ const Navbar = () => {
             // width={500}
             // height={600}
             style={{ objectFit: "cover" }}
-            loading="lazy"          />
+            loading="lazy"
+          />
         </div>
 
         {/* contact */}
@@ -102,7 +103,7 @@ const Navbar = () => {
       <div className="flex flex-col items-center lower-nav-bg">
         <div className="hidden space-x-6 lg:inline-block py-4">
           <ul className=" flex ">
-            <NavBarDesign  setisOpen={setisOpen}/>
+            <NavBarDesign setisOpen={setisOpen} />
           </ul>
         </div>
 
@@ -114,7 +115,7 @@ const Navbar = () => {
           // style={{ top: "80px" }}
         >
           <ul className="flex justify-center items-center flex-col">
-            <NavBarDesign  setisOpen={setisOpen}/>
+            <NavBarDesign setisOpen={setisOpen} />
           </ul>
         </div>
       </div>

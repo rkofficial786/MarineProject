@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { product_data } from "../productData";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const CategoryProduct = () => {
   const { category } = useParams();
@@ -35,6 +36,12 @@ const CategoryProduct = () => {
   };
   return (
     <div>
+      <Helmet>
+  <title>APP Engineering | {category}</title>
+  <meta name="description" content="Explore the range of specialized marine engineering products and services offered by APP Engineering & Supplies for vessels in the marine industry." />
+  <meta name="keywords" content="APP Engineering, marine engineering, products, services, vessel equipment" />
+</Helmet>
+
       <div className="max-w-7xl mx-auto mt-[60px]">
         {/* naviagte */}
 

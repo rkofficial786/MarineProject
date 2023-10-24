@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import boatImg from "../images/boat3.png";
 import Intro2 from "../components/about/Intro2";
+import { Helmet } from "react-helmet";
 const locationsData = [
   {
     country: "India",
@@ -23,6 +24,12 @@ const ContactUs = () => {
   return (
     <div className="mt-4">
       {/* <img src={require("../images/contact.c728fa4c.png")} className="w-screen" alt="" /> */}
+       
+      <Helmet>
+  <title>APP Engineering | Contact Us</title>
+  <meta name="description" content="Get in touch with APP Engineering for all your marine engineering needs. Our experienced team is ready to assist you with quality products and expert guidance." />
+  <meta name="keywords" content="APP Engineering, marine engineering, contact" />
+</Helmet>
 
       <div className="flex    flex-col  py-0 justify-around text-center lg:text-left">
         {/* <div

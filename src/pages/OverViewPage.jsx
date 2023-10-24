@@ -5,6 +5,7 @@ import JsonData from "../JsonData";
 import useIntersectionObserver from "../components/hooks/UseScrollAnimation";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 const routeMapper = {
   services: "Services",
@@ -38,6 +39,18 @@ export default function OverViewPage() {
   console.log(selectedDataItem);
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>{selectedDataItem.name}</title>
+        <meta
+          name="description"
+          content="Explore detailed information about a specific marine engineering product from APP Engineering & Supplies, ensuring quality and durability for vessel performance and safety."
+        />
+        <meta
+          name="keywords"
+          content="marine engineering product, vessel equipment, quality, durability"
+        />
+      </Helmet>
+
       <div className="pt-6">
         <nav aria-label="Breadcrumb">
           <ol

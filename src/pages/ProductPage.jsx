@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import JsonData from "../JsonData";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 const routeMapper = {
   services: "Services",
@@ -28,6 +29,12 @@ export default function ProductPage() {
 
   return (
     <div className="bg-white">
+      <Helmet>
+  <title>APP Engineering | {routeMapper[item]}</title>
+  <meta name="description" content="Explore detailed information about a specific marine engineering product from APP Engineering & Supplies, ensuring quality and durability for vessel performance and safety." />
+  <meta name="keywords" content="marine engineering product, vessel equipment, quality, durability" />
+</Helmet>
+
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl flex justify-center font-bold tracking-tight text-gray-900">
           {routeMapper[item]}
